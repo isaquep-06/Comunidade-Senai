@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.sobre-nos-criar,
+.subtitulos-sobre-nos-rodape-p,
+.logo-rodape-sobre-nos-p,
+.direitos-reservados {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Cabeçalho */
+.cabecalho-pai {
+    width: 100%;
+    background-color: #1374b4;
+    height: 6vh;
+    display: flex;
+    padding-left: 20px;
+    gap: 1300px;
+}
+
+.cabecalho-filho {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    width: 100%;
+}
+
+li {
+    border-right: 2px solid aliceblue;
+    padding-right: 10px;
+}
+
+.sobre-nos-criar {
+    font-size: 22px;
+    list-style: none;
+    color: white;
+}
+
+.criar-txt {
+    font-weight: 300;
+    color: #fafafa;
+    font-size: 18px;
+}
+
+.criar-img {
+    border-radius: 40px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.perfil-pai {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.portal-aluno-h2 {
+    font-size: 17px;
+    color: #f07618;
+    font-weight: 600;
+    background-color: #333;
+    padding: 16px;
+}
+
+.perfil-img {
+    width: 30px;
+}
+
+.logo {
+    width: 22%;
+    cursor: pointer;
+}
+
+
+/* Navbar */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    width: 100%;
+
+}
+
+.menu-item {
+    font-weight: 400;
+    font-size: 94%;
+    color: white;
+    font-family: system-ui;
+}
+
+.container {
+    height: 94vh;
+    width: 100%;
+    background-color: #8a8989;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-foto-pai {
+    background-color: #333;
+    display: flex;
+    gap: 30px;
+    width: 50%;
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+}
+
+hr {
+    height: 400px;
+    border: 2px solid #565656;
+}
+
+.foto-e-nome-de-perfil-pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.foto-de-perfil-img {
+    width: 200px;
+}
+
+.foto-de-perfil-h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+}
+
+.titulo-informacoes {
+    font-size: 30px;
+    color: #84e9ff;
+    font-weight: 500;
+}
+
+.dados-info {
+    max-width: 350px;
+    color: white;
+}
+
+.redes-socias-pai {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+.redes-socias-img {
+    width: 30px;
+}
+
+.bios-pai,
+.nivel-pai,
+.contato-pai {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #89d0e0;
+}

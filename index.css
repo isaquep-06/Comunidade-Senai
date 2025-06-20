@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Fontes */
+.portal-aluno-h2,
+.navbar-menu .menu-item,
+.estilo-encima-da-foto-h1,
+.cursos-em-destaque-h1,
+.titulo-sobre-nos-h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.sobre-nos-criar,
+.subtitulos-sobre-nos-rodape-p,
+.logo-rodape-sobre-nos-p,
+.direitos-reservados {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Cabeçalho */
+.cabecalho-pai {
+    width: 100%;
+    background-color: #1374b4;
+    height: 6vh;
+    display: flex;
+    padding-left: 20px;
+    gap: 350px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.cabecalho-filho {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    width: 100%;
+}
+
+li {
+    border-right: 2px solid aliceblue;
+    padding-right: 10px;
+}
+
+.sobre-nos-criar {
+    font-size: 22px;
+    list-style: none;
+    color: white;
+}
+
+.criar-txt {
+    font-weight: 300;
+    color: #fafafa;
+    font-size: 18px;
+}
+
+.criar-img {
+    border-radius: 40px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.perfil-pai {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.portal-aluno-h2 {
+    font-size: 17px;
+    color: #f07618;
+    font-weight: 600;
+    background-color: #333;
+    padding: 19px;
+}
+.perfil-img {
+    width: 30px;
+}
+.logo {
+    width: 22%;
+    cursor: pointer;
+}
+
+.pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Navbar */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    width: 100%;
+
+}
+
+.menu-item {
+    font-weight: 400;
+    font-size: 94%;
+    color: white;
+    font-family: system-ui;
+}
+
+
+/* FUNDO DE VIDRO*/
+.principal-img {
+    width: 100%;
+}
+
+.imagem-principal-section-pai {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: none;
+}
+
+.estilos-fundo-de-vidro {
+    background-color: #254b8770;
+    backdrop-filter: blur(4px);
+    border-radius: 95px 0px 0px 5px;
+    padding: 20px;
+}
+
+.principal-div {
+    width: 30%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.estilo-encima-da-foto-h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 550px;
+}
+
+.estilo-encima-da-foto-button {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #89d0e0;
+    background-color: #1111111a;
+    backdrop-filter: blur(1px);
+    border: none;
+    border-radius: 5px;
+    box-shadow: -2px 2px 0px 2px #6495ed59;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.princiapl-img {
+    width: 100%;
+    border: none;
+}
+
+/* Cursos em Destaque */
+.cursos-em-destaque-pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.cursos-em-destaque-p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c0c0c09a;
+}
+
+.cursos-em-destaque-h1 {
+    color: #1374b4;
+    font-size: 40px;
+}
+
+.risco-img {
+    width: 6%;
+}
+
+/* Grid de cursos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    height: 45vh;
+}
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.grid-item.eletrotecnica {
+    background-image: url('https://img.freepik.com/fotos-gratis/um-eletricista-trabalha-em-uma-mesa-telefonica-com-um-cabo-eletrico-de-conexao_169016-15204.jpg?ga=GA1.1.341464260.1750185022&semt=ais_hybrid&w=740');
+}
+
+.grid-item.mecanica {
+    background-image: url('https://img.freepik.com/fotos-gratis/mecanico-que-trabalha-no-portatil_1170-1631.jpg?ga=GA1.1.341464260.1750185022&semt=ais_hybrid&w=740');
+}
+
+.grid-item.eletromecanica {
+    background-image: url('https://img.freepik.com/fotos-gratis/mecanico-que-repara-uma-bicicleta_1170-2458.jpg?ga=GA1.1.341464260.1750185022&semt=ais_hybrid&w=740');
+}
+
+.grid-item.manutencao {
+    background-image: url('https://blog.fras-le.com/wp-content/uploads/2021/05/mulher-mecanica-1280x720.jpg');
+}
+
+.titulo-curso {
+    color: #ffffff;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.number {
+    color: silver;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: system-ui;
+    border-bottom: 2px solid #a4a6a8;
+}
+
+/* VIDEOS RECENTES ABAIXO //// */
+
+.videos-pai {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 120px;
+    background: url(./imagens/fundo-video.png);
+}
+
+.logos-titulo-video-pai {
+    display: flex;
+    align-items: start;
+}
+
+.video-logo-titulo {
+    width: 55px;
+    padding-left: 10px;
+    border-left: 2px solid #313131;
+}
+
+.titulo-video-h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-family: system-ui;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.grid-videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    background: black;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+video {
+    width: 500px;
+    height: 500px;
+}
+
+video:fullscreen {
+    background-color: black;
+}
+
+.pai-video {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfil-dados-video {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+label {
+    color: silver;
+}
+
+.horas {
+    color: #c0c0c091;
+}
+
+.perfil-img-video {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.legenda-h3 {
+    max-width: 450px;
+    text-align: start;
+    font-size: 24px;
+    color: #fffbfb;
+    padding-top: 25px;
+}
+
+.legenda-p {
+    max-width: 450px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: system-ui;
+    color: #afafaf;
+}
+
+/* Rodapé */
+.fundo-rodape-pai {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.rodape-pai {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #dfdfdf36;
+}
+
+.rodape-sobre-nos-pai {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    padding: 70px;
+}
+
+.informacoes-rodape-sobre-nos {
+    width: 40%;
+}
+
+.logo-rodape {
+    width: 20%;
+
+}
+
+
+
+.logo-rodape-pai {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-sobre-nos-h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.subtitulos-sobre-nos-rodape-p,
+.subtitulos-sobre-nos-rodape-p-fique-por-dentro,
+.logo-rodape-sobre-nos-p {
+    font-size: 20px;
+    font-weight: 100;
+    color: gray;
+    max-width: 450px;
+    line-height: 35px;
+}
+
+.subtitulos-sobre-nos-rodape-p-dados {
+    font-size: 17px;
+    font-weight: 500;
+    color: gray;
+    line-height: 36px;
+}
+
+.rodape-rede-social-pai {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.redes-sociais-img {
+    width: 25px;
+}
+
+input {
+    padding: 12px;
+    background-color: #333;
+    border: 1px solid ;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 14px;
+}
+
+input:focus {
+    outline: none;
+    
+}
+
+button {
+    padding: 12px;
+    background-color: #3b79f3;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+/* Direitos reservados */
+.direitos-reservados-pai {
+    padding: 20px;
+    background-color: #d8dadc;
+    text-align: center;
+}
+
+.logo-comunidade-senai-img {
+    width: 3%;
+}
+
+.direitos-reservados {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+b {
+    text-decoration: none;
+    color: #377be9;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #89d0e0;
+}
